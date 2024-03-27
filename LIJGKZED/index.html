@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Aufgabenbereich Brand- und Katastrophenschutz</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="suq">
+            <div class="nd">
+                <div class="a" align="center">
+                    <a href="https://www.landkreis-schwandorf.de/" target="_blank"> <img src="1.png" /></a>
+                </div>
+
+                <p align="center">Beim <strong>Landkreis Schwandorf </strong>sind <strong>zum n&auml;chstm&ouml;glichen Zeitpunkt </strong>unbefristete <strong>Vollzeitstellen im</strong></p>
+
+                <h1>
+                    <strong>Aufgabenbereich Brand- und Katastrophen&shy;schutz</strong><br />
+                    beim Sachgebiet 4.1 - Sicherheits&shy;angelegenheiten und<br />
+                    Gewerbewesen und im
+                </h1>
+
+                <h1>
+                    <strong>Aufgabenbereich Ausl&auml;nderwesen</strong><br />
+                    beim Sachgebiet 4.2 - Ausl&auml;nder- und Personalstandwesen
+                </h1>
+
+                <p align="center">zu besetzen.</p>
+                <div class="x">
+                    <p>
+                        <strong>N&auml;here Informationen zu dieser Stellenausschreibung finden Sie im Internet unter </strong><a href="http://www.landkreis-schwandorf.de/" target="_blank"><strong>www.Landkreis-Schwandorf.de</strong></a>
+                        <strong> oder mit Hilfe des QR-Codes.</strong>
+                    </p>
+
+                    <img src="2.png" class="img2" />
+                </div>
+
+                <p>Schwandorf, 25.03.2024</p>
+
+                <h2>
+                    <strong>
+                        Landratsamt Schwandorf<br />
+                        Ebeling,
+                    </strong>
+                    Landrat
+                </h2>
+            </div>
+        </div>
+
+        <script>
+            (function (win, doc) {
+                var awesomeIframe = {};
+
+                awesomeIframe.requestAnimFrame = (function () {
+                    var lastTime = 0;
+                    return (
+                        win.requestAnimationFrame ||
+                        function (callback) {
+                            var now = +new Date(),
+                                nextTime = Math.max(lastTime + 16, now);
+                            return setTimeout(function () {
+                                callback((lastTime = nextTime));
+                            }, nextTime - now);
+                        }
+                    );
+                })();
+
+                awesomeIframe.windowHeight = 0;
+                awesomeIframe.htmlElement = doc.getElementsByTagName("html")[0];
+
+                awesomeIframe.targetDomain = "*";
+
+                awesomeIframe.resizeFrame = function () {
+                    var windowHeight = doc.body ? Math.max(doc.body.offsetHeight, awesomeIframe.htmlElement.offsetHeight) : awesomeIframe.htmlElement.offsetHeight;
+
+                    if (awesomeIframe.windowHeight === windowHeight) {
+                        awesomeIframe.requestAnimFrame.call(win, awesomeIframe.resizeFrame);
+
+                        return false;
+                    }
+
+                    awesomeIframe.windowHeight = windowHeight;
+
+                    try {
+                        win.frameElement.style.height = windowHeight + "px";
+                    } catch (e) {
+                        win.parent.postMessage("resize:" + windowHeight, awesomeIframe.targetDomain);
+                    }
+                    awesomeIframe.requestAnimFrame.call(win, awesomeIframe.resizeFrame);
+                };
+
+                awesomeIframe.requestAnimFrame.call(win, awesomeIframe.resizeFrame);
+            })(window, document, undefined);
+        </script>
+    </body>
+</html>
